@@ -1,4 +1,4 @@
-# Student_mgmt_rest_api
+# StudentManagement System Using Rest API
 
 Meam Members :
 1. Girish Pawar (Team Leader)                                                          
@@ -30,6 +30,30 @@ A simple full-stack **Student Management System** built with:
 ---
 
 ## 📁 Project Structure
-<img src="frontend/screenshot.png" alt="Student UI" width="600"/>
+<img src="https://github.com/GirishPawar15/Student_mgmt_rest_api/blob/main/Rest_Api.png" alt="Student UI" width="600"/>
+
+
+---
+
+## 📸 Frontend Features
+
+- Navigation menu with 4 options:
+  - Add Student
+  - Update Student
+  - Delete Student
+  - Show All Students
+- Dynamic section display
+- Form validation (can be extended)
+- Responsive table view
+
+---
+
+## ✅ Advantages 
+1. Easy to manage student records.
+2. Saves time and reduces manual work.
+3. Keeps data safe and accurate.   
+4.Quickly tracks student performance.
+
+---
 
 
