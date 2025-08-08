@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+
+        <!-- Navigation buttons -->
+        <div class="nav-bar">
+            <button onclick="showSection('addSection')">Add Student</button>
+            <button onclick="showSection('updateSection')">Update Student</button>
+            <button onclick="showSection('deleteSection')">Delete Student</button>
+            <button onclick="showSection('showSection')">Show All Students</button>
+        </div>
+
+        <!-- Add Student Section -->
+        <div id="addSection" class="section">
+            <h2>Add Student</h2>
+            <input type="number" id="addRollNo" placeholder="Roll No">
+            <input type="text" id="addName" placeholder="Name">
+            <input type="text" id="addAddress" placeholder="Address">
+            <input type="email" id="addEmail" placeholder="Email">
+            <input type="text" id="addMobileNumber" placeholder="Mobile Number">
+            <input type="text" id="addStandard" placeholder="Standard">
+            <input type="number" id="addMarks" placeholder="Marks">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <!-- Update Student Section -->
+        <div id="updateSection" class="section" style="display:none;">
+            <h2>Update Student</h2>
+            <input type="number" id="updateRollNo" placeholder="Roll No">
+            <button onclick="loadStudentForUpdate()">Load Student</button>
+            <div id="updateForm" style="display:none;">
+                <input type="text" id="updateName" placeholder="Name">
+                <input type="text" id="updateAddress" placeholder="Address">
+                <input type="email" id="updateEmail" placeholder="Email">
+                <input type="text" id="updateMobileNumber" placeholder="Mobile Number">
+                <input type="text" id="updateStandard" placeholder="Standard">
+                <input type="number" id="updateMarks" placeholder="Marks">
+                <button onclick="updateStudent()">Update Student</button>
+            </div>
+        </div>
+
+        <!-- Delete Student Section -->
+        <div id="deleteSection" class="section" style="display:none;">
+            <h2>Delete Student</h2>
+            <input type="number" id="deleteRollNo" placeholder="Roll No">
+            <button onclick="deleteStudentByRollNo()">Delete Student</button>
+        </div>
+
+        <!-- Show All Students Section -->
+        <div id="showSection" class="section" style="display:none;">
+            <h2>Student List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Standard</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
