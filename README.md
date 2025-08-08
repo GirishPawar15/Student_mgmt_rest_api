@@ -56,4 +56,6 @@ A simple full-stack **Student Management System** built with:
 
 ---
 
+## 📁 Project Structure
+<img src="" alt="Student UI" width="600"/>
 
