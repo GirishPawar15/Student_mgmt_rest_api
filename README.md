@@ -57,5 +57,5 @@ A simple full-stack **Student Management System** built with:
 ---
 
 ## 📁 Project Structure
-<img src="" alt="Student UI" width="600"/>
+<img src="Output_Rest_API.png" alt="Student UI" width="600"/>
 
